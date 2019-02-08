@@ -1,0 +1,150 @@
+
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    color:white;
+    background-color: #222222;
+}
+.header h1{
+    text-align: center;
+    padding:5px;
+    font-weight: 40;
+}
+.header hr{
+    width: 93%;
+    margin: auto;
+    border: 1px solid white;
+    
+}
+.header ul{
+    /* display: inline-block; */
+    /* border:1px solid white; */
+    text-align: center;
+    margin: 10px 0px;
+}
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px 5px;
+}
+.header ul li a{
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    display: block;
+    color:black;
+    padding:10px;
+    /* background:rgb(240, 217, 174); */
+    background:#00eeee;
+    border-radius: 10px;
+}
+.header ul li a:hover{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+    padding:8px;
+}
+img{
+    margin-top: 20px;
+}
+.main{
+    width:90%;
+    margin: auto;
+    background: radial-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.8),rgba(0,0,0,01),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1)) no-repeat fixed center
+    ,url(../images/paul_walker.jpg) no-repeat fixed center;
+    background-size: contain;
+    color:rgba(255, 255,255, 1);
+    padding:10px;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+.main h1,.main h2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin: 10px;
+    padding:20px;
+}
+
+.main p{
+    text-indent: 30px;
+    
+}
+.main p::first-letter{
+    font-size:20px;
+}
+.main table{
+    width:95%;
+    margin: auto;
+}
+table,th,td{
+    border:2px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    padding:5px;
+}
+#timeline ul{
+    list-style-position: inside;
+}
+#timeline ul li{
+    margin:10px;
+}
+.main footer{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+button#anchor-top{
+    position: absolute;
+    color:red;
+}
+
+#anchor-nav{
+    background:rgba(255,0,0,0.9);
+    display: inline-block;
+    position:fixed;
+    bottom:0;
+    right: 0;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 25px;
+    border-radius: 50%;
+    margin:1vw 6vw;
+}
+#anchor-nav a{
+    /* background:blue; */
+    display: block;
+    margin-top:50%;
+    transform: translateY(-50%);
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+}
+@media screen and (max-width: 900px){
+    .header,.main{
+        width:100%;
+        
+    }
+    .main table{
+        width:100%;
+        max-width: 100%;
+    }
+    #anchor-nav{
+        margin: 10px;
+    }
+}
